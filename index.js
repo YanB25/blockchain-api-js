@@ -39,9 +39,10 @@ function createSonmFactory(remoteEthNodeUrl, chainId = 'live', privateChain = fa
      * @param {string} privateKey
      */
     async function createAccount(address) {
+        console.log("GETTING ADDRESS");
         await getAddresses();
-
         const address0x = add0x(address);
+        console.log(address0x);
         const ctrArguments = {
             gethClient,
             config: chainConfig,
@@ -54,7 +55,7 @@ function createSonmFactory(remoteEthNodeUrl, chainId = 'live', privateChain = fa
         const account = new Account(ctrArguments);
 
         account.initContracts(chainConfig.contractAddress);
-
+        console.log("Create account is over");
         return account;
     }
 

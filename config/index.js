@@ -1,20 +1,20 @@
 module.exports = {
     livenet: {
-        url: 'http://server.bensyan.top:8545',
+        url: 'https://mainnet.infura.io',
         contractAddress: {},
     },
     livenet_private: {
-        url: 'http://server.bensyan.top:7545',
+        url: 'https://sidechain.livenet.sonm.com',
         contractAddress: {
             addressRegistry: '0x70a884df5916196775cb2ff6016e36a5ba30df92',
         },
     },
     rinkeby: {
-        url: 'http://server.bensyan.top:8545',
+        url: 'https://rinkeby.infura.io',
         contractAddress: {},
     },
     rinkeby_private: {
-        url: 'http://server.bensyan.top:7545',
+        url: 'https://sidechain-dev.sonm.com',
         contractAddress: {
             addressRegistry: '0x70a884df5916196775cb2ff6016e36a5ba30df92',
         },
@@ -26,7 +26,7 @@ module.exports = {
     testrpc_private: {
         url: 'http://server.bensyan.top:7545',
         contractAddress: {
-            addressRegistry: '0x70a884df5916196775cb2ff6016e36a5ba30df92',
+            addressRegistry: "0x70a884df5916196775cb2ff6016e36a5ba30df92",
         },
     },
 };

@@ -149,7 +149,7 @@ class Account {
         };
 
         this.nonce++;
-
+        console.log("FIRST STEP OVER");
         return this.gethClient.sendTransaction(tx);
     }
     async getGasParams(limit, price) {
