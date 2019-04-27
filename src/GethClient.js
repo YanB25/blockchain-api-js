@@ -4,6 +4,8 @@ const Buffer = require('buffer').Buffer;
 const EthereumTx = require('ethereumjs-tx');
 const TransactionResult = require('./TransactionResult');
 const ethUtil = require('ethereumjs-util');
+// maybe bugs
+const fetch = require("node-fetch");
 
 module.exports = class GethClient {
 
