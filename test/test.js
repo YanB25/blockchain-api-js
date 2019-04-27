@@ -1,26 +1,8 @@
-const { expect } = require('chai');
 const sonmApi = require('../index');
-const BN = require('ethereumjs-util').BN;
-const getPrivateKey = require('../src/utils/recover-private-key');
-const newAccount = require('../src/utils/new-account');
-const isERC20 = require('../src/utils/check-token');
-const randomBytes = require('randombytes');
 const vasyaCfg = require('./data/Vasya_11111111.json');
 const { createSonmFactory } = sonmApi;
 const URL_PRIVATE_CHAIN = "http://server.bensyan.top:7545"
 let VASYA, PETYA, tokenList, sonmTokenAddress, sideChainSonmToken, sonmToken;
-// var test = async function () {
-//     const [vasyaPrivateKey] = await Promise.all([
-//         getPrivateKey(vasyaCfg, '11111111'),
-//     ]);
-//     console.log(vasyaPrivateKey);
-// }
-// 69deaef1da6fd4d01489d7b46e8e3aab587d9fcd49de2080d367c3ef120689ef
-
-// test();
-// async function init() {
-   
-// }
 
 var test=async function () {
     // this.timeout(+Infinity);
