@@ -7,7 +7,7 @@ const isERC20 = require('../src/utils/check-token');
 const randomBytes = require('randombytes');
 const vasyaCfg = require('./data/Vasya_11111111.json');
 const { createSonmFactory } = sonmApi;
-const URL_PRIVATE_CHAIN = "http://server.bensyan.top:7545"
+const URL_PRIVATE_CHAIN = "http://sidechain.dds.sysu.tech"
 let VASYA, PETYA, tokenList, sonmTokenAddress, sideChainSonmToken, sonmToken;
 // var test = async function () {
 //     const [vasyaPrivateKey] = await Promise.all([
@@ -19,7 +19,7 @@ let VASYA, PETYA, tokenList, sonmTokenAddress, sideChainSonmToken, sonmToken;
 
 // test();
 // async function init() {
-   
+
 // }
 
 var test=async function () {
